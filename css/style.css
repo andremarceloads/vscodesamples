@@ -7,83 +7,34 @@ html,body{
    height: 100%;
 
 }
-/* 
-CALC
-.sidebar{
-     width: 300px;/*30% 
-    height: 100%;
-    background-color: black;
-    float: left;
-}
-.content{
-    float: left;/*para ficar um do lado outro
-    width: calc(100% - 300px);  /*70%;
-    height: 100%;
-    background-color: gray;
-} */
-
-/* .box{
-    width: calc((100% / 3) + 90px); /*util para o designer responsivo
-    height: 90px;
-    background-color: red;
-} */
-
-
-/*VW E VH com a Box*/
-/*Viewport width*/
-/*Viewport heigh*/
-/* .box{
-    width: 100%;
-    height: 90px;
-    background-color: red;
-}
-.box2{
-    width: 10px;
-    height: 9000px;
-} */
 
 /*MEDIA QUERIES*/
 .box{
-    width: calc(100% / 3) ;
+    width: 33.3% ;
     height: 300px;
     background-color: green;
     float: left; /*deixar alinhados*/
     border: 1px solid black;
 }
 
-@media screen and (max-height: 320px){
-    .box{
-        width: 50%;
-    }
-}
 
-/* @media screen and (max-height: 580px){
-    .box{
-        width: 50%;
-    }
+
+/*15/02/21*/
+/*
+768PX DE WIDTH E  500PX DE HEIGHT
+ @media screen and (max-width: 768px) and (max-height: 500px){
+   .box{
+    width: 100%;
+   }
 } */
 
-/* @media screen and (min-width: 320px){
+/*
+768PX DE WIDTH OU 500PX DE HEIGHT
+TOMAR CUIDADOS COM OS ESPAÇOS.
+TODAS AS REGRAS PARA SITE RESPONSIVO
+@media screen and (max-width: 768px) , screen and (max-height: 500px){
     .box{
-        width: 100%;
+     width: 100%;
     }
-} */
-/* @media screen and (min-width: 580px){
-    .box{
-        width: 50%;
-    }
-} */
-/* 
-@media screen and (max-width: 580px){
-    .box{
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 320px){
-    .box{
-        width: 100%;
-    }
-} */
-
-
+ }
+  */
