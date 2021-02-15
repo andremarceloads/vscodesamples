@@ -8,16 +8,57 @@ html,body{
 
 }
 
+.container{
+    width: 98%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: gray;
+}
 /*MEDIA QUERIES*/
-.box{
-    width: 33.3% ;
-    height: 300px;
-    background-color: green;
-    float: left; /*deixar alinhados*/
-    border: 1px solid black;
+
+    .container{
+        
+        text-align: center; 
+        padding: 30px 0;
+        background-color: gray;
+    }
+    .box{
+       
+        display: inline-block;
+        width: 33.3%;  /*foi colocado um div cega*/
+        height: 300px;
+        margin-bottom: -4px;
+        margin-right: -4px;
+         border: 2px solid rgb(22, 19, 19);
+        background-color: rgb(209, 29, 104);
+        max-width: 300px;
+    }
+    .box :last-child{
+        margin-right: 0;
+    }
+   
+
+@media screen and (max-width: 768px){
+    .box{
+        max-width: none;
+        width: 50%;
+    }
+    .box:nth-of-type(2){
+        margin-right: 0;
+    }
+    .container{
+        text-align: right;
+        padding:2% 20px ;
+    }
 }
 
 
+@media screen and (max-width: 580px){
+    .box{
+        width: 100%;
+        margin-right: 0%;
+    }
+}
 
 /*15/02/21*/
 /*
