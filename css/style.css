@@ -11,21 +11,39 @@ html,body{
 div.box{
 	width: 300px;
 	height: 300px;
+	position: relative;
 	background-color: green;
-	/* -webkit-transition-property: width height; */
-	/* -webkit-transition-property: 3s; */
-	/* transition-property: width heigth; */
-	/* transition-duration: 3s; */
-	/* transition-delay: 1s; */
-	/* transition-timing-function: linear; */
-	/* -webkit-transition-timing-function: linear; */
-	 -webkit-transition: 1s width, 3s height; /* linear 1s; */
-		transition: 1s width, 3s height /* linear 1s;*/
-		-webkit-transition-delay 2s;
-		transition-delay: 2s;
+	/* animation-name: animacao_1;
+	animation-duration: 2s;
+	 animation-iteration-count: infinite; 
+	animation-delay: 2s;
+	position: relative; */
+	/*animation: animacao_1 2s 2; /*short hand
+	animation-delay: 2s;*/
 	 } 
-div.box:hover{
-	width: 600px;
-	height: 400px;
+	 div.box:hover{
+		 animation: animacao_1 4s 2;
+		 animation-delay: 2s;
+	 }
 
+@keyframes animacao_1{
+	0% {
+		top: 0;
+		left: 0;
+		background-color: green;
+		
+	}
+
+	45% {
+		border: 3px solid red;
+		top: 10px;
+		left: 100px;
+		background-color: orange;
+	}
+	100% {
+		border: 0;
+		top: 0px;/*resertar o valores iniciais para dar a  sensação de continuidade*/
+		left: 0;
+		background-color: red;
+	}
 }
