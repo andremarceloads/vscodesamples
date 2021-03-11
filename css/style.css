@@ -7,74 +7,24 @@
 html,body{
 	height: 100%;
 }  */
-
-/* .box{
-	width: 500px;
-	height: 500px;
-	background: black;
-	margin: 50px auto;
-	/* border-radius: 250px;  primeira forma 
-	border-top-right-radius: 20px;
-	border-top-left-radius: 20px;
-	border-bottom-right-radius: 20px;
-	border-bottom-left-radius: 20px; 
-}
-/* Truque designer responsivo */
 /* 
-.box{
-	width:30%;	
-	padding-top: 30%;
-	margin: 50px auto;
-	position: relative;	
+.box {
+width: 30px;
+/* padding: 30px 2%; *
+background-color: rgb(220,220,220);
+position: relative;
 }
-.teste-circulo{
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: black;
-	border-radius: 50%;
 
-} */
-
-/*Transform*/
-.transform{
-	/* transform: translate(-50%, -50%); */
-	/* transform: translateX( -50%) translateY(-50%); */
-	/*x -horizontal e o y - vertical*/
-	-ms-transform: translate( -50%, -50%) ;/*todos os nav usar o ms*/
-	transform: translate( -50%, -50%) ; /*rotate(-35deg);*/
-	width: 40%;
-	max-width: 300px;
-	height: 300px;
-	border: 3px solid #ccc;
-	border-radius: 8px;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	/* transition: 2s; */
-	/*Utilizar animation agora*/
-	animation-name: animacao;
-	animation-duration: 4s;
-}
-/*Transition*/
-/* .transform:hover{
-	/* transform:translate( -50%, -50%) rotate(45deg) scale(2,2); 
-	transform:translate( -50%, -50%)   rotateY(180deg) ;
-} */
-
-/*Animation*/
-@keyframes animacao{
-	0%{
-		transform: translate(-50%, -50%) rotateY(0deg);
+.box p{
+	/* word-wrap: break-word ;  usar com cuidado
+	display: inline;
+	border-bottom: 2px solid green;
+	color: #444;
+	font-size: 13px;
+ 
+}*/
+	p{
+		width: 100px;
+		background-color: green;
+		white-space: nowrap;/*nao quebra as linhas*/
 	}
-
-	50%{
-		transform: translate(-50%, -50%) rotateY(180deg);
-	}
-
-	100%{
-		transform: translate(-50%, -50%) rotateY(0deg);
-	}
-}
