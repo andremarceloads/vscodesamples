@@ -8,59 +8,73 @@ html,body{
 	height: 100%;
 }  */
 
-div.box{
-	/* width: 200px;
-	height: 200px;
-	background-color: green;
-	position: relative; */
-	text-align: center;
- }
-div.box img{
-	/* position: absolute;
+/* .box{
+	width: 500px;
+	height: 500px;
+	background: black;
+	margin: 50px auto;
+	/* border-radius: 250px;  primeira forma 
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px; 
+}
+/* Truque designer responsivo */
+/* 
+.box{
+	width:30%;	
+	padding-top: 30%;
+	margin: 50px auto;
+	position: relative;	
+}
+.teste-circulo{
+	position: absolute;
 	left: 0;
 	top: 0;
 	width: 100%;
 	height: 100%;
-	z-index: 1; */
-	/* box-shadow: 10px 5px 8px 2px  rgb(202, 184, 126); */
+	background: black;
+	border-radius: 50%;
+
+} */
+
+/*Transform*/
+.transform{
+	/* transform: translate(-50%, -50%); */
+	/* transform: translateX( -50%) translateY(-50%); */
+	/*x -horizontal e o y - vertical*/
+	-ms-transform: translate( -50%, -50%) ;/*todos os nav usar o ms*/
+	transform: translate( -50%, -50%) ; /*rotate(-35deg);*/
 	width: 40%;
+	max-width: 300px;
+	height: 300px;
+	border: 3px solid #ccc;
+	border-radius: 8px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	/* transition: 2s; */
+	/*Utilizar animation agora*/
 	animation-name: animacao;
-	animation-duration: 2s;
-	box-shadow: 10px 5px 8px 2px  rgb(202, 184, 126);
-	-webkit-box-shadow: 10px 5px 8px 2px  rgb(202, 184, 126);
-	/* animation-iteration-count: 1; isso é padrão */
-
+	animation-duration: 4s;
 }
+/*Transition*/
+/* .transform:hover{
+	/* transform:translate( -50%, -50%) rotate(45deg) scale(2,2); 
+	transform:translate( -50%, -50%)   rotateY(180deg) ;
+} */
 
+/*Animation*/
 @keyframes animacao{
 	0%{
-		box-shadow: 10px 5px 8px 2px  rgb(202, 184, 126); 
+		transform: translate(-50%, -50%) rotateY(0deg);
 	}
 
-50%{
-	box-shadow: 15px 5px 16px 2px  rgb(202, 184, 126); 
+	50%{
+		transform: translate(-50%, -50%) rotateY(180deg);
+	}
+
+	100%{
+		transform: translate(-50%, -50%) rotateY(0deg);
+	}
 }
-
-100%{
-	box-shadow: 15px 5px 8px 2px  rgb(202, 184, 126); 
-}
-
-}
-/*
-div.box p{
-	/* position: absolute;
-	left: 0;
-	top: 0;
-	z-index: 2;
-	width: 100%;
-	height: 100%;
-	transition: 1s;
-	/* opacity: 0.4; */
-	/*background-color: green; */
-	/* background-color: rgba(0,0,0,0.4) 
-
-}*/
-
-/* div.box p:hover{
-	opacity: 0.4;
-} */
