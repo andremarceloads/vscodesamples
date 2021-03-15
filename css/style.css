@@ -8,24 +8,24 @@ html,body{
 	height: 100%;
 }  */
 
-.table{
-	display: table;
-	width: 900px;
-	margin: 0 auto;
-	border-collapse: collapse; /*aqui tem a colisão*/
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+aside{
+	/* order: 2; */
+	width: 300px;
+	background: #ccc;
+	padding: 90px 20px;
 
 }
 
-.table-row{
-	display: table-row;
-}
-
-.table-cell{
-	/*fazendo alterações*/
-	height: 400px;
-	text-align: center;
-	vertical-align: middle;
-	padding: 10px;
-	border: 1px solid black; /*por padrão nao colidir*/
-	display: table-cell;
+article{
+	/* order: 1; */
+	width: 800px;
+	padding: 30px;
+	background: gray;
+	/* height: 700px; */
 }
